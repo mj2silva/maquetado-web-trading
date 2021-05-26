@@ -57,7 +57,7 @@ module.exports = {
       {
         test: /\.(sa|sc|c)ss$/,
         use: [
-          MiniCssExtractPlugin.loader,
+          'style-loader',
           'css-loader',
           'sass-loader',
         ],
@@ -72,6 +72,19 @@ module.exports = {
             name: '[name].[contentHash].[ext]',
             outputPath: './assets/fonts',
             publicPath: '../assets/fonts',
+            esModule: false,
+          }
+        }
+      },
+      {
+        test: /\.(png)$/,
+        use: {
+          loader: 'url-loader',
+          options: {
+            limit: 10000,
+            name: '[name].[contentHash].[ext]',
+            outputPath: './assets/img',
+            publicPath: '../assets/img',
             esModule: false,
           }
         }

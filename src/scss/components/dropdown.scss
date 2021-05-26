@@ -1,0 +1,44 @@
+.dropdown {
+  position: relative;
+  &__title {
+    cursor: pointer;
+    padding: 1rem;
+    font-size: 1.2rem;
+    color: $cl-white;
+    &:hover + .dropdown__content {
+      display: block;
+      height: 12rem;
+      opacity: 100;
+    }
+  }
+  &__content {
+    position: absolute;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    list-style: none;
+    margin: 0;
+    border-radius: 15px;
+    transition-duration: 500ms;
+    padding: .5rem 1rem;
+    background-color: $cl-white;
+    min-width: 10rem;
+    &:hover {
+      display: block;
+      height: 12rem;
+      opacity: 100;
+    }
+  }
+ 
+  &__item {
+    padding: .5rem;
+  }
+  &__link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    &:hover {
+      color: $cl-softGray;
+    }
+  }
+}

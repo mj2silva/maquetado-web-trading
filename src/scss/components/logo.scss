@@ -1,0 +1,21 @@
+.logo {
+  position: relative;
+  display: flex;
+  max-width: 12rem;
+  align-items: center;
+  justify-content: center;
+  &__image {
+    position: relative;
+    min-width: 4rem;
+    min-height: 4rem;
+    background-color: $cl-white;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  &__brand-name {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin: 0 .5rem;
+    color: $cl-white;
+  }
+}

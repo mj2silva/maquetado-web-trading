@@ -58,7 +58,12 @@ module.exports = {
         test: /\.(sa|sc|c)ss$/,
         use: [
           MiniCssExtractPlugin.loader,
-          'css-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              url: false
+            }
+          },
           'sass-loader',
         ],
       },
@@ -76,6 +81,19 @@ module.exports = {
           }
         }
       },
+      {
+        test: /\.(png|jpg)$/,
+        use: {
+          loader: 'url-loader',
+          options: {
+            limit: 10000,
+            name: '[name].[contentHash].[ext]',
+            outputPath: './assets/img',
+            publicPath: '../assets/img',
+            esModule: false,
+          }
+        }
+      }
     ],
   },
   plugins: [

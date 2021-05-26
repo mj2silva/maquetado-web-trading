@@ -1,0 +1,41 @@
+.benefits {
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: $cl-gray-benefits;
+  &__title {
+    margin: 4rem 0 1rem 0;
+  }
+  &__body {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__content {
+    height: fit-content;
+    width: 50%;
+    margin-left: 2rem;
+    &-title {
+      margin: 0 0 1rem 0;
+    }
+  }
+  &__image {
+    position: relative;
+    min-width: 20rem;
+    min-height: 20rem;
+    width: 40%;
+    height: 28rem;
+    & img {
+      object-fit: cover;
+    }
+  }
+  &__call-to-action {
+    margin-bottom: 2rem;
+  }
+  &__button {
+    min-width: 15rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 1rem 1.5rem;
+  }
+}

@@ -1,0 +1,27 @@
+.header {
+  position: fixed;
+  padding: 0 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  box-sizing: border-box;
+  height: $headerHeight;
+  justify-content: space-between;
+  align-items: center;
+  transition-duration: 500ms;
+  z-index: 99;
+  &--transparent {
+    background-color: transparent;
+  }
+  &--black {
+    background-color: black;
+  }
+  &__nav {
+    display: flex;
+    align-items: center;
+    height: calc(#{$headerHeight} / 2);
+  }
+  &__session-controls {
+    min-width: 20rem;
+  }
+}

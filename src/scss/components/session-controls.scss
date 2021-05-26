@@ -1,0 +1,16 @@
+.session-controls {
+  display: flex;
+  justify-content: space-between;
+  &__login {
+    font-weight: bold;
+    width: 49%;
+    font-size: 1.2rem;
+  }
+  &__register {
+    background-color: $cl-black;
+    color: $cl-white;
+    border-width: 2px;
+    width: 49%;
+    font-size: 1.2rem;
+  }
+}

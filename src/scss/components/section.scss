@@ -1,12 +1,6 @@
 .section {
   display: flex;
-  min-height: 100vh;
+  min-height: calc(100vh - #{$headerHeight});
   align-items: center;
   justify-content: center;
-  &__title {
-    width: 50%;
-  }
-  &__form {
-    width: 25rem;
-  }
 }
