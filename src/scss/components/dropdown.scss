@@ -10,6 +10,15 @@
       height: 12rem;
       opacity: 100;
     }
+    &:hover > .dropdown__arrow {
+      transform: rotate(180deg);
+    }
+  }
+  &__arrow {
+    color: $cl-white;
+    display: inline-block;
+    margin: 0 .5rem;
+    transition-duration: 250ms;
   }
   &__content {
     position: absolute;
@@ -17,6 +26,8 @@
     opacity: 0;
     overflow: hidden;
     list-style: none;
+    display: flex;
+    flex-direction: column;
     margin: 0;
     border-radius: 15px;
     transition-duration: 500ms;
@@ -24,7 +35,7 @@
     background-color: $cl-white;
     min-width: 10rem;
     &:hover {
-      display: block;
+      display: flex;
       height: 12rem;
       opacity: 100;
     }

@@ -1,0 +1,49 @@
+.profile-menu {
+  &__selector {
+    display: flex;
+    align-items: center;
+    &:hover + .profile-menu__options {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 22rem;
+    }
+  }
+  &__picture {
+    position: relative;
+    width: 3rem;
+    height: 3rem;
+  }
+  &__options {
+    right: 1rem;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: $cl-gray-benefits;
+    padding: 0 1rem;
+    &:hover {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 22rem;
+    }
+  }
+  &__options-picture {
+    position: relative;
+    width: 4rem;
+    height: 4rem;
+  }
+  &__button {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: .5rem;
+  }
+  &__names, &__last-names, &__username {
+    margin: .5rem 0;
+  }
+  &__logout {
+    color: $cl-red;
+    margin-top: .5rem;
+    font-size: 1.2rem;
+  }
+}

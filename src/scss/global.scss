@@ -33,6 +33,10 @@
 .link {
   text-decoration: none;
   color: $cl-black;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
   &:hover {
     text-decoration: underline;
   }
@@ -78,6 +82,7 @@
 @import "./components/course-view.scss";
 @import "./components/user-review.scss";
 @import "./components/stars.scss";
+@import "./components/profile-menu.scss";
 
 body {
   font-family: $avenirPro;
