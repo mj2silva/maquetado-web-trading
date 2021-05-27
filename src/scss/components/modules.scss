@@ -1,0 +1,20 @@
+.modules {
+  flex-direction: column;
+  &__title {
+    align-self: flex-start;
+    margin-left: 2rem;
+    &-bar {
+      border-bottom: 5px solid $cl-black;
+      width: 38%;
+    }
+    &-main {
+      margin: 0;
+      font-size: 1.2rem;
+    }
+  }
+  &__accordion {
+    margin: 1rem 0;
+    padding: 2rem;
+    box-sizing: border-box;
+  }
+}

@@ -1,0 +1,13 @@
+.module-abstract {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  box-sizing: border-box;
+  &__topic {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    margin: .5rem 0;
+  }
+}

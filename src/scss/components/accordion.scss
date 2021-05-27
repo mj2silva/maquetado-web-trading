@@ -8,6 +8,7 @@
   box-sizing: border-box;
   overflow: hidden;
   &__item {
+    box-sizing: border-box;
     &-head {
       display: flex;
       justify-content: space-between;
@@ -17,7 +18,7 @@
       padding: .5rem 1rem;
       margin: 0;
       width: 100%;
-      height: 100%;
+      height: 3rem;
       box-sizing: border-box;
     }
     &-description {
@@ -51,15 +52,165 @@
         }
       }
       & .accordion__content {
-        display: none;
+        height: 0rem;
+        padding: 0;
       }
     }
   }
   &__content {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     background-color: $cl-white;
     padding: 1rem;
+    transition-duration: 500ms;
+    align-items: center;
+    height: 8rem;
     & > p {
       margin: 0;
+    }
+  }
+  &--with-list {
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    border: none;
+    justify-content: space-between;
+    width: 100%;
+    height: 28rem;
+    & .accordion__content {
+      margin: 0;
+      padding: .5rem 1rem;
+    }
+    & .accordion__column {
+      width: 49%;
+    }
+    & .accordion__item {
+      width: 100%;
+      height: fit-content;
+      margin-bottom: .5rem;
+      border: 1px solid $cl-darkGray;
+      border-radius: 5px;
+      overflow: hidden;
+      &-head {
+        background-color: $cl-darkGray;
+        color: $cl-white;
+        padding: .1rem .5rem;
+        height: 2rem;
+      }
+      &-icon {
+        display: none;
+      }
+      &-helper {
+        font-size: 1.5rem;
+      }
+      &-title {
+        font-size: 1.2rem;
+      }
+      &--collapsed {
+        background-color: $cl-darkGray;
+        & .accordion__item {
+          &-head {
+            &:hover + .accordion__content {
+              display: flex;
+              width: 100%;
+              height: 8rem;
+              padding: .5rem 1rem;
+              opacity: 1;
+              z-index: 0;
+              justify-content: center;
+            }
+          }
+          &-helper {
+            opacity: 100;
+          }
+        }
+        & .accordion__content {
+          box-sizing: border-box;
+          padding: 0;
+          height: 0;
+          opacity: 0;
+          z-index: -1;
+          &:hover {
+            display: flex;
+            width: 100%;
+            height: 8rem;
+            padding: .5rem 1rem;
+            opacity: 1;
+            z-index: 0;
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+  &--list-one-column {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    box-sizing: border-box;
+    & .accordion__item {
+      width: 100%;
+      height: fit-content;
+      margin-bottom: .5rem;
+      border: 1px solid $cl-gray;
+      overflow: hidden;
+      &-head {
+        background-color: $cl-gray;
+        color: $cl-darkGray;
+        padding: .5rem .8rem;
+        height: 3rem;
+      }
+      &-icon {
+        display: none;
+      }
+      &-helper {
+        font-size: 1.5rem;
+      }
+      &-title {
+        font-size: 1.2rem;
+      }
+      &--collapsed {
+        background-color: $cl-gray;
+        border-radius: 8px;
+        & .accordion__item {
+          overflow: hidden;
+          border: 1px solid $cl-gray;
+          &-head {
+            &:hover + .accordion__content {
+              display: flex;
+              width: 100%;
+              height: 8rem;
+              border-radius: 5px;
+              padding: .5rem 1rem;
+              opacity: 1;
+              z-index: 0;
+              justify-content: center;
+            }
+          }
+          &-helper {
+            opacity: 100;
+          }
+        }
+        & .accordion__content {
+          box-sizing: border-box;
+          padding: 0;
+          height: 0;
+          opacity: 0;
+          z-index: -1;
+          &:hover {
+            display: flex;
+            width: 100%;
+            height: 8rem;
+            padding: .5rem 1rem;
+            opacity: 1;
+            z-index: 0;
+            justify-content: center;
+            overflow: hidden;
+          }
+        }
+      }
     }
   }
 }

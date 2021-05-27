@@ -1,0 +1,21 @@
+.storie {
+  display: flex;
+  max-width: 25rem;
+  &__author-photo {
+    position: relative;
+    width: 10rem;
+    height: 10rem;
+    margin: 1rem 1rem;
+  }
+  &__author-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__author-name {
+    margin: 0;
+  }
+  &__message {
+    margin: .5rem 0;
+  }
+}

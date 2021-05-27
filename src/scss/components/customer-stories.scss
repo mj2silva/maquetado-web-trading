@@ -1,0 +1,45 @@
+.customer-stories {
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url('../assets/img/traders.png');
+  min-height: 30rem;
+  color: $cl-white;
+  &__icon {
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+  }
+  &__title {
+    display: flex;
+    color: $cl-yellow;
+    align-items: center;
+    margin: 2rem 0;
+    &-text {
+      margin: 0 1rem;
+    }
+  }
+  &__text-sub {
+    border-bottom: 5px solid $cl-yellow;
+  }
+  &__stories {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  &__controls {
+    display: flex;
+    margin: 2rem 0;
+  }
+  &__control {
+    width: .5rem;
+    height: .5rem;
+    border-radius: 50%;
+    border: 1px solid $cl-yellow;
+    overflow: hidden;
+    cursor: pointer;
+    margin: .2rem;
+    &:hover {
+      background-color: $cl-yellow;
+    }
+  }
+}
