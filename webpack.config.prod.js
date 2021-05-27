@@ -73,7 +73,7 @@ module.exports = {
           options: {
             limit: 10000,
             mimetype: 'application/font-woff',
-            name: '[name].[contentHash].[ext]',
+            name: '[name].[ext]',
             outputPath: './assets/fonts',
             publicPath: '../assets/fonts',
             esModule: false,
@@ -86,7 +86,7 @@ module.exports = {
           loader: 'url-loader',
           options: {
             limit: 10000,
-            name: '[name].[contentHash].[ext]',
+            name: '[name].[ext]',
             outputPath: './assets/img',
             publicPath: '../assets/img',
             esModule: false,
