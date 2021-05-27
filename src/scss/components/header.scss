@@ -1,5 +1,6 @@
 .header {
-  position: fixed;
+  position: sticky;
+  top: 0;
   padding: 0 2rem;
   display: flex;
   flex-wrap: wrap;
@@ -10,10 +11,13 @@
   align-items: center;
   transition-duration: 500ms;
   z-index: 99;
+  background-color: black;
   &--transparent {
+    position: fixed;
     background-color: transparent;
   }
   &--black {
+    position: fixed;
     background-color: black;
   }
   &__nav {

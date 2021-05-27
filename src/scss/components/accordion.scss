@@ -85,6 +85,9 @@
     }
     & .accordion__column {
       width: 49%;
+      &--single {
+        width: 100%;
+      }
     }
     & .accordion__item {
       width: 100%;
@@ -93,6 +96,7 @@
       border: 1px solid $cl-darkGray;
       border-radius: 5px;
       overflow: hidden;
+      list-style: none;
       &-head {
         background-color: $cl-darkGray;
         color: $cl-white;
@@ -106,7 +110,9 @@
         font-size: 1.5rem;
       }
       &-title {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
+        font-family: $avenirDemi;
+        font-weight: 100;
       }
       &--collapsed {
         background-color: $cl-darkGray;
