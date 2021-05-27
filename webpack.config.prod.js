@@ -74,7 +74,7 @@ module.exports = {
             limit: 10000,
             mimetype: 'application/font-woff',
             name: '[name].[ext]',
-            outputPath: './assets/fonts',
+            outputPath: '/assets/fonts',
             publicPath: '../assets/fonts',
             esModule: false,
           }
@@ -87,7 +87,7 @@ module.exports = {
           options: {
             limit: 10000,
             name: '[name].[ext]',
-            outputPath: './assets/img',
+            outputPath: '/assets/img',
             publicPath: '../assets/img',
             esModule: false,
           }
