@@ -1,0 +1,12 @@
+.stars {
+  display: flex;
+  &__star {
+    font-size: 3rem;
+    color: $cl-grayStar;
+    transition-duration: 200ms;
+    cursor: pointer;
+    &:hover {
+      color: $cl-yellow;
+    }
+  }
+}

@@ -54,6 +54,7 @@
     border-radius: 50%;
     margin: 0 .3rem;
     transition-duration: 250ms;
+    cursor: pointer;
     &:hover {
       color: $cl-black;
       background-color: $cl-white;
