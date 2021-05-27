@@ -1,0 +1,18 @@
+.contact-form {
+  background-image: url('../assets/img/contacto.png');
+  background-size: cover;
+  flex-direction: column;
+  color: $cl-white;
+  &__title {
+    font-size: 1.3rem;
+  }
+  &__message {
+    font-size: 1.3rem;
+    width: 60%;
+    text-align: center;
+  }
+  &__form {
+    width: 35%;
+    min-width: 25rem;
+  }
+}

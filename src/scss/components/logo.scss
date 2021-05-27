@@ -18,4 +18,11 @@
     margin: 0 .5rem;
     color: $cl-white;
   }
+  &--black {
+    & .logo {
+      &__brand-name {
+        color: $cl-black;
+      }
+    }
+  }
 }

@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Trading para ti</title>
-  <link rel="shortcut icon" href="assets/icons/favicon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="./assets/icons/favicon.png" type="image/x-icon">
+  
+  <script src="https://kit.fontawesome.com/15f1ec3d17.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header class="header header--transparent" id="header">
@@ -531,8 +533,8 @@
         <div class="author-presentation__image">
           <img src="./assets/img/profesor.png" alt="Renzo Wenzel" class="image">
         </div>
-        <div class="author-presentation__message">
-          <h2 class="author-presentation__greeting">
+        <div class="author-presentation__greeting">
+          <h2 class="author-presentation__presentation">
             ¡Hey! soy Renzo Wenzel
           </h2>
           <h3 class="author-presentation__submessage">
@@ -554,7 +556,7 @@
       <div class="social-media__cards">
         <div class="social-card">
           <div class="social-card__logo">
-            <img class="image" src="./assets/img/icon-tiktok.png" alt="Icono tiktok">
+            <img class="image" src="./assets/img/conocenos-tiktok.png" alt="Icono tiktok">
           </div>
           <div class="social-card__message">
             Entérate de las últimas tendencias del trading.
@@ -563,9 +565,44 @@
             Síguenos en Tik tok
           </button>
         </div>
+        <div class="social-card">
+          <div class="social-card__logo">
+            <img class="image" src="./assets/img/conocenos-telegram.png" alt="Icono tiktok">
+          </div>
+          <div class="social-card__message">
+            Analicemos juntos indicadores clave del mercado bursátil.
+          </div>
+          <button class="button social-card__button">
+            Únete a la comunidad de Telegram
+          </button>
+        </div>
+        <div class="social-card">
+          <div class="social-card__logo">
+            <img class="image" src="./assets/img/conocenos-email.png" alt="Icono tiktok">
+          </div>
+          <div class="social-card__message">
+            ¿Dudas sobre si el curso es para ti?, Conversa con nuestros asesores 
+            sin compromiso.
+          </div>
+          <button class="button social-card__button">
+            Conersar via email
+          </button>
+        </div>
+        <div class="social-card">
+          <div class="social-card__logo">
+            <img class="image" src="./assets/img/conocenos-programa.png" alt="Icono tiktok">
+          </div>
+          <div class="social-card__message">
+            Accede a conocimiento avanzado, explicado de manera eficaz 
+            para dominar el trading.
+          </div>
+          <button class="button social-card__button">
+            Pre-inscríbete en el Programa
+          </button>
+        </div>
       </div>
     </section>
-    <section class="contact-form">
+    <section class="section contact-form">
       <h2 class="contact-form__title">
         ¿ESTÁS LISTO PARA DOMINAR EL TRADING?
       </h2>
@@ -575,7 +612,7 @@
       </p>
       <div class="form contact-form__form">
         <h3 class="form__title">
-          PRE-INSCRIBIRSE
+          PRE-INSCRIBIRME
         </h3>
         <form class="form__form">
           <label for="names" class="form__item">
@@ -589,15 +626,16 @@
           <label for="country" class="form__item">
             <span class="form__label">Nombres y Apellidos</span>
             <select class="form__input" placeholder="País">
+              <option selected value="none">País</option>
               <option value="Perú">Argentina</option>
               <option value="Perú">Chile</option>
               <option value="Perú">Colombia</option>
               <option value="Perú">Perú</option>
             </select>
           </label>
-          <h4>
-            <span class="success-icon">
-              <img src="./assets/img/check.png">
+          <h4 class="form__success">
+            <span class="form__success-icon">
+              <img class="image" src="./assets/img/check.png">
             </span>
             Ya estoy registrado
           </h4>
@@ -607,7 +645,6 @@
     </section>
     <footer class="footer">
       <div class="footer__main">
-
         <div class="footer__contact">
           <h3 class="footer__contact-title">CONTÁCTANOS</h3>
           <div class="logo logo--black footer__logo">
@@ -631,9 +668,21 @@
           <h3 class="footer__social-message">
             ¡Cambia tu forma de ver los gráficos!
           </h3>
-          <div class="social-media__logos">
-            <div class="social-media__logo">
-  
+          <div class="footer__social-logos">
+            <div class="footer__social-logo">
+              <i class="fab fa-facebook-f"></i>
+            </div>
+            <div class="footer__social-logo">
+              <i class="fab fa-tiktok"></i>
+            </div>
+            <div class="footer__social-logo">
+              <i class="fab fa-telegram-plane"></i>
+            </div>
+            <div class="footer__social-logo">
+              <i class="fab fa-instagram"></i>
+            </div>
+            <div class="footer__social-logo">
+              <i class="fab fa-youtube"></i>
             </div>
           </div>
         </div>
