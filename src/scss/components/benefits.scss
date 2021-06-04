@@ -1,6 +1,6 @@
 .benefits {
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   background-color: $cl-gray-benefits;
   &__title {
     margin: 4rem 0 1rem 0;
@@ -22,15 +22,15 @@
   &__image {
     position: relative;
     min-width: 20rem;
-    min-height: 20rem;
     width: 40%;
-    height: 28rem;
+    height: 23rem;
     & img {
-      object-fit: cover;
+      object-fit: contain;
+      margin: 0 auto;
     }
   }
   &__call-to-action {
-    margin-bottom: 2rem;
+    margin: 2rem 0;
   }
   &__button {
     min-width: 15rem;
