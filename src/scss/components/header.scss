@@ -46,7 +46,7 @@
   &__session-controls {
     min-width: 20rem;
   }
-  &__open-nav-button {
+  &__open-nav-button, &__close-nav-button {
     display: none;
   }
   &__mobile-title {
@@ -68,6 +68,9 @@
       left: 0;
       right: 0;
       display: block;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
       &--open {
         animation: open-header-nav linear 250ms forwards;
       }
@@ -75,13 +78,21 @@
         animation: close-header-nav linear 250ms forwards;
       }
     }
-    &__open-nav-button {
+    &__open-nav-button, &__close-nav-button {
       display: block;
       color: $cl-yellow;
       justify-self: flex-end;
       background-color: transparent;
-      font-size: 1.5rem;
       border: none;
+    }
+    &__open-nav-button {
+      font-size: 1.5rem;
+    }
+    &__close-nav-button {
+      position: absolute;
+      right: 5rem;
+      top: 5rem;
+      font-size: 2.5rem;
     }
     &__mobile-title {
       display: block;
