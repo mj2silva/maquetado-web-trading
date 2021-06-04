@@ -25,4 +25,9 @@
       }
     }
   }
+  @media screen and (max-width: $breakpoint-tablet) {
+    &__brand-name {
+      display: none;
+    }
+  }
 }

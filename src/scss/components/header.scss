@@ -1,3 +1,21 @@
+@keyframes open-header-nav {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes close-header-nav {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
 .header {
   position: sticky;
   top: 0;
@@ -27,5 +45,47 @@
   }
   &__session-controls {
     min-width: 20rem;
+  }
+  &__open-nav-button {
+    display: none;
+  }
+  &__mobile-title {
+    display: none;
+  }
+  @media screen and (max-width: $breakpoint-tablet) {
+    flex-direction: row-reverse;
+    position: sticky;
+    background-color: $cl-black;
+    &__nav {
+      width: 100%;
+      position: absolute;
+      background-color: $cl-black;
+      min-height: 100vh;
+      margin: 0;
+      top: 0;
+      bottom: 0;
+      overflow: hidden;
+      left: 0;
+      right: 0;
+      display: block;
+      &--open {
+        animation: open-header-nav linear 250ms forwards;
+      }
+      &--closed {
+        animation: close-header-nav linear 250ms forwards;
+      }
+    }
+    &__open-nav-button {
+      display: block;
+      color: $cl-yellow;
+      justify-self: flex-end;
+      background-color: transparent;
+      font-size: 1.5rem;
+      border: none;
+    }
+    &__mobile-title {
+      display: block;
+      color: $cl-white;
+    }
   }
 }
