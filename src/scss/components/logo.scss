@@ -30,4 +30,10 @@
       display: none;
     }
   }
+  @media screen and (max-width: $breakpoint-tablet) {
+    &__image {
+      min-width: 3rem;
+      min-height: 3rem;
+    }
+  }
 }

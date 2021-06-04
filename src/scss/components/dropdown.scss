@@ -52,31 +52,38 @@
     }
   }
   @media screen and (max-width: $breakpoint-tablet) {
-    width: 100%;
+    display: block;
     &__title {
       display: none;
     }
     &__content {
       position: relative;
-      height: 100%;
-      top: 0;
-      min-height: 20rem;
+      height: auto;
       width: 100%;
       color: $cl-white;
-      background-color: $cl-black;
+      background-color: transparent;
       opacity: 100;
       animation: none;
       font-size: 2.5rem;
+      box-sizing: border-box;
       &:hover {
-        display: initial;
-        height: initial;
+        display: flex;
+        height: auto;
         opacity: initial;
       }
     }
+    &__item {
+      margin: .5rem 0;
+    }
     &__link {
       color: $cl-white;
-      margin: 1rem 0;
       text-align: center;
+    }
+  }
+  @media screen and (max-width: $breakpoint-mobile) {
+    &__content {
+      min-height: 15rem;
+      font-size: 1.5rem;
     }
   }
 }
