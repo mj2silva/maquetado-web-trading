@@ -15,4 +15,18 @@
     width: 35%;
     min-width: 25rem;
   }
+  @media screen and (max-width: $breakpoint-tablet) {
+    padding: 2rem 2rem;
+    &__title {
+      text-align: center;
+    }
+    &__message {
+      width: 100%;
+    }
+    &__form {
+      width: 100%;
+      box-sizing: border-box;
+      min-width: 0;
+    }
+  }
 }

@@ -29,6 +29,9 @@
   &__controls {
     display: flex;
     margin: 2rem 0;
+    &--mobile {
+      display: none;
+    }
   }
   &__control {
     width: .5rem;
@@ -38,8 +41,85 @@
     overflow: hidden;
     cursor: pointer;
     margin: .2rem;
+    box-sizing: border-box;
+    padding: 0;
+    background-color: transparent;
     &:hover {
       background-color: $cl-yellow;
     }
+  }
+  @media screen and (max-width: $breakpoint-tablet) {
+    height: 25rem;
+    padding: 3rem 0;
+    &__controls {
+      display: none;
+      &--mobile {
+        display: flex;
+        margin: 2rem 2rem;
+      }
+    }
+    &__control {
+      &--prev, &--next {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        color: $cl-black;
+        background-color: $cl-yellow;
+        border: 1px solid $cl-yellow;
+        overflow: hidden;
+        cursor: pointer;
+        margin: .2rem;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        &:hover {
+          background-color: $cl-yellow-hover;
+        }
+      }
+    }
+    &__stories {
+      position: relative;
+      min-height: 20rem;
+      width: 100%;
+    }
+    &__storie {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      &--inactive {
+        transform: translateX(-100%);
+        animation: storie-mobile-out ease 1s forwards;
+      }
+      &--active {
+        transform: translateX(0);
+        animation: storie-mobile-in ease 1s forwards;
+      }
+    }
+  }
+}
+
+@keyframes storie-mobile-in {
+  0% {
+    transform: translate(-100%);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+@keyframes storie-mobile-out {
+  0% {
+    transform: translate(0%);
+  }
+  100% {
+    transform: translate(150%);
   }
 }
