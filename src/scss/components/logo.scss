@@ -25,4 +25,33 @@
       }
     }
   }
+  @media screen and (max-width: $breakpoint-tablet) {
+    &__brand-name {
+      display: none;
+    }
+    &--black {
+      & .logo {
+        &__brand-name {
+          display: block;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: $breakpoint-mobile) {
+    &__image {
+      min-width: 3rem;
+      min-height: 3rem;
+    }
+    &--black {
+      & .logo {
+        &__brand-name {
+          font-size: 1.3rem;
+        }
+        &__image {
+          min-width: 5rem;
+          min-height: 5rem;
+        }
+      }
+    }
+  }
 }

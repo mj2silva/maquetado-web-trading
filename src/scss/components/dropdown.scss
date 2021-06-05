@@ -40,7 +40,6 @@
       opacity: 100;
     }
   }
- 
   &__item {
     padding: .5rem;
   }
@@ -50,6 +49,41 @@
     height: 100%;
     &:hover {
       color: $cl-softGray;
+    }
+  }
+  @media screen and (max-width: $breakpoint-tablet) {
+    display: block;
+    &__title {
+      display: none;
+    }
+    &__content {
+      position: relative;
+      height: auto;
+      width: 100%;
+      color: $cl-white;
+      background-color: transparent;
+      opacity: 100;
+      animation: none;
+      font-size: 2.5rem;
+      box-sizing: border-box;
+      &:hover {
+        display: flex;
+        height: auto;
+        opacity: initial;
+      }
+    }
+    &__item {
+      margin: .5rem 0;
+    }
+    &__link {
+      color: $cl-white;
+      text-align: center;
+    }
+  }
+  @media screen and (max-width: $breakpoint-mobile) {
+    &__content {
+      min-height: 15rem;
+      font-size: 1.5rem;
     }
   }
 }

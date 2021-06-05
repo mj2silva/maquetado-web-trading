@@ -14,4 +14,14 @@
   &__title-sub {
     border-bottom: 5px solid $cl-black;
   }
+  @media screen and (max-width: $breakpoint-tablet) {
+    &__accordion {
+      width: 80%;
+    }
+  }
+  @media screen and (max-width: $breakpoint-mobile) {
+    &__accordion {
+      width: 85%;
+    }
+  }
 } 

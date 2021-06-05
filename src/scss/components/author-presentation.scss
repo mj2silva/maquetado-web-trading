@@ -32,12 +32,32 @@
     width: 35%;
     font-size: 1.5rem;
     text-align: center;
-    min-width: 25rem;
+    min-width: 20rem;
   }
   &__submessage {
     text-align: center;
     margin: .5rem 0;
     font-size: 1.5rem;
     font-family: $avenirDemi;
+  }
+  @media screen and (max-width: $breakpoint-tablet) {
+    padding: 4rem 0;
+    &__author {
+      flex-direction: column;
+      max-width: 90%;
+    }
+    &__greeting {
+      max-width: 85%;
+    }
+    &__presentation {
+      font-size: 1.7rem;
+    }
+    &__submessage {
+      font-size: 1.5rem;
+    }
+    &__message {
+      font-size: 1.2rem;
+      max-width: 85%;
+    }
   }
 }

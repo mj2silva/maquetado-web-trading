@@ -9,6 +9,7 @@
   overflow: hidden;
   &__item {
     box-sizing: border-box;
+    max-width: 100%;
     &-head {
       display: flex;
       justify-content: space-between;
@@ -70,7 +71,6 @@
     padding: 1rem;
     transition-duration: 500ms;
     align-items: center;
-    height: 8rem;
     & > p {
       margin: 0;
     }
@@ -220,6 +220,21 @@
             overflow: hidden;
           }
         }
+      }
+    }
+  }
+  @media screen and (max-width: $breakpoint-tablet) {
+    &__item {
+      &-title {
+        font-size: 1.3rem;
+      }
+    }
+    &--with-list {
+      flex-direction: column;
+      justify-content: flex-start;
+      & .accordion__column {
+        width: 100%;
+        height: auto;
       }
     }
   }

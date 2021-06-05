@@ -18,4 +18,11 @@
   &__message {
     margin: .5rem 0;
   }
+  @media screen and (max-width: $breakpoint-tablet) {
+    &__author-name, &__message {
+      text-align: center;
+      max-width: 80%;
+      margin: 0 auto;
+    }
+  }
 }
