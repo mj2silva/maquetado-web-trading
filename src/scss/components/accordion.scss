@@ -9,6 +9,7 @@
   overflow: hidden;
   &__item {
     box-sizing: border-box;
+    max-width: 100%;
     &-head {
       display: flex;
       justify-content: space-between;
@@ -219,6 +220,13 @@
             overflow: hidden;
           }
         }
+      }
+    }
+  }
+  @media screen and (max-width: $breakpoint-tablet) {
+    &__item {
+      &-title {
+        font-size: 1.3rem;
       }
     }
   }

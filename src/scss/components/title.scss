@@ -15,4 +15,10 @@
     font-family: $avenirPro;
     font-weight: 100;
   }
+  @media screen and (max-width: $breakpoint-tablet) {
+    &__secondary {
+      text-align: start;
+      font-size: 1.1rem;
+    }
+  }
 }

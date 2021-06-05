@@ -38,4 +38,25 @@
     font-weight: bold;
     padding: 1rem 1.5rem;
   }
+  @media screen and (max-width: $breakpoint-tablet) {
+    &__title {
+      padding: 0 2rem;
+      box-sizing: border-box;
+      margin-top: 2rem;
+    }
+    &__body {
+      flex-direction: column;
+      width: 100%;
+    }
+    &__content {
+      width: 90%;
+      margin-left: 0;
+    }
+    &__accordion {
+      width: 100%;
+    }
+    &__image {
+      display: none;
+    }
+  }
 }
