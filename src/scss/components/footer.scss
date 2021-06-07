@@ -81,6 +81,10 @@
     }
     &__social-media {
       margin-bottom: 2rem;
+      width: 100%;
+    }
+    &__social-logos {
+      align-self: center;
     }
     &__foot {
       flex-direction: column;

@@ -33,4 +33,9 @@
     min-width: 10rem;
     border-radius: 15px;
   }
+  @media screen and (max-width: $breakpoint-tablet) {
+    &__form {
+      width: 80%;
+    }
+  }
 }

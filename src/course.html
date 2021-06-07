@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,7 +18,7 @@
         TRADING PARA TI
       </div>
     </div>
-    <div class="header__nav">
+    <div class="header__nav header__nav--closed">
       <div class="profile-menu header__profile">
         <div class="dropdown__title profile-menu__selector">
           <div class="profile-menu__picture">
@@ -47,6 +47,12 @@
         </div>
       </div>
     </div>
+    <div class="header__mobile-title">
+      <h2>TRADING PARA TI</h2>
+    </div>
+    <button class="header__open-nav-button">
+      <i class="fas fa-bars"></i>
+    </button>
   </header>
   <main class="main">
     <section class="section course-view">
@@ -359,7 +365,7 @@
         </h3>
       </div>
       <div class="customer-stories__stories">
-        <div class="storie customer-stories__storie">
+        <div class="storie customer-stories__storie customer-stories__storie--inactive">
           <div class="storie__author-photo">
             <img class="image" src="./assets/img/usuario.png">
           </div>
@@ -372,7 +378,7 @@
             </p>
           </div>
         </div>
-        <div class="storie customer-stories__storie">
+        <div class="storie customer-stories__storie customer-stories__storie--active">
           <div class="storie__author-photo">
             <img class="image" src="./assets/img/usuario.png">
           </div>
@@ -386,11 +392,19 @@
           </div>
         </div>
       </div>
+      <div class="customer-stories__controls--mobile">
+        <button class="customer-stories__control--next">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="customer-stories__control--prev">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
       <div class="customer-stories__controls">
-        <div class="customer-stories__control"></div>
-        <div class="customer-stories__control"></div>
-        <div class="customer-stories__control"></div>
-        <div class="customer-stories__control"></div>
+        <button class="customer-stories__control"></button>
+        <button class="customer-stories__control"></button>
+        <button class="customer-stories__control"></button>
+        <button class="customer-stories__control"></button>
       </div>
     </section>
     <section class="section user-review">
